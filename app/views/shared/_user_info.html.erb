@@ -1,0 +1,19 @@
+<% if current_user.admin? %>
+  <%= link_to "Manage Items", items_path, class: "btn btn-primary pull-right" %>
+  <% end %>
+
+ <h1 align = "center">
+  Welcome!
+</h1>
+<h2>
+  <a href = "<%= user_path(current_user) %>">
+    <%= current_user.name %>
+  </a>
+</h2>
+
+<div class ="center hero-unit span10">
+    <h2>
+      Click here to go to cart
+    </h2>
+    <%= link_to "Cart",items_path, class: "btn btn-large btn-primary" %>
+</div>
