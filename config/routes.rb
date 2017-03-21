@@ -1,5 +1,19 @@
 ShoppingApp2::Application.routes.draw do
 
+  get "carts/new"
+
+  get "carts/create"
+
+  get "carts/update"
+
+  get "carts/edit"
+
+  get "carts/destroy"
+
+  get "carts/index"
+
+  get "carts/show"
+
   get "cart/new"
 
   get "cart/create"
